@@ -20,13 +20,41 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wj3-06-ys0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-fu-O43">
+                                <rect key="frame" x="20" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.99018429490000004" green="0.99018429490000004" blue="0.99018429490000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Cj0-CC-0wD"/>
+                                    <constraint firstAttribute="height" constant="50" id="o5x-SE-WOh"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJ5-1B-oUw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6H5-JT-MEC">
+                                <rect key="frame" x="305" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KHq-O0-8y8"/>
+                                    <constraint firstAttribute="height" constant="50" id="W6H-E8-HnF"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KLL-ka-f0B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wj3-06-ys0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BiX-iu-ET9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6H5-JT-MEC" secondAttribute="trailing" constant="20" id="Ihl-Ho-gHZ"/>
                             <constraint firstItem="wj3-06-ys0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UZt-t0-7iR"/>
                             <constraint firstItem="wj3-06-ys0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XMK-FH-JH4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yl6-fu-O43" secondAttribute="bottom" constant="20" id="bM7-6b-h8c"/>
+                            <constraint firstItem="yl6-fu-O43" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cF3-jD-B2b"/>
                             <constraint firstItem="wj3-06-ys0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fYH-6J-iJM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6H5-JT-MEC" secondAttribute="bottom" constant="20" id="zDu-0h-K1D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
